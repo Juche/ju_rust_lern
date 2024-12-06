@@ -1,3 +1,12 @@
 [workspace]
 
-members = ["hello_cargo", "guess_number", "variables", "ownership", "structure", "module_system"]
+members = [
+  "hello_cargo",
+  "guess_number",
+  "variables",
+  "ownership",
+  "structure",
+  "module_system",
+  "minigrep",
+  "playground",
+]
