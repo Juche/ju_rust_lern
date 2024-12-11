@@ -9,8 +9,15 @@
  */
 
 pub fn run() {
-    // 占位符
+    // `{}` 占位符
     println!("{} days", 31);
-    // 占位符使用位置参数
+    // `{0}, {1}` 占位符使用位置参数
     println!("{0}, this is {1}. {1}, this is {0}", "Alice", "Bob");
+    // 命名参数
+    println!(
+        "{subject} {verb} {object}",
+        object = "the lazy dog",
+        subject = "The quick brown fox",
+        verb = "jumps over"
+    );
 }

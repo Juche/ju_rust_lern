@@ -116,6 +116,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "rust_example"
+version = "0.1.0"
+
+[[package]]
 name = "structure"
 version = "0.1.0"
 

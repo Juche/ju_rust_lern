@@ -8,5 +8,5 @@ members = [
   "structure",
   "module_system",
   "minigrep",
-  "playground",
+  "playground", "rust_example",
 ]
