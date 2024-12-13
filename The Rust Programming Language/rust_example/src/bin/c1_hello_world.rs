@@ -5,4 +5,5 @@ fn main() {
     person.hello();
 
     format::demo::run();
+    format::custom::run();
 }
