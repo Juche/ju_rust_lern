@@ -87,14 +87,21 @@ impl fmt::Display for City {
 
 #[derive(Debug)]
 struct Color {
-    r: u8,
-    g: u8,
-    b: u8,
+    r: i32,
+    g: i32,
+    b: i32,
 }
 
 impl fmt::Display for Color {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        write!(f, "RGB ({r}, {g}, {b})", r = self.r, g = self.g, b = self.b)
+        let r = format!("{:02X}", self.r);
+        let g = format!("{:02X}", self.g);
+        let b = format!("{:02X}", self.b);
+        write!(
+            f,
+            "RGB ({0}, {1}, {2}) => #{r}{g}{b}",
+            self.r, self.g, self.b
+        )
     }
 }
 

@@ -27,6 +27,7 @@ pub fn run() {
     println!("Binary representation 255: {:b}", 255);
     println!("Octal representation 255: {:o}", 255);
     println!("Hex representation 255: {:x}", 255);
+    println!("Hex representation 255: {:X}", 255);
     println!("Pointer 255: {:p}", &255);
 
     // 指定宽度 `:width`
@@ -35,8 +36,10 @@ pub fn run() {
     println!("{0:_<width$}", "hello", width = 10);
 
     // 指定精度 `:precision`
-    println!("One decimal place: {0} = {1:.1}", "x", 3.14159);
-    println!("Two decimal places: {0} = {1:.2}", "x", 3.14159);
-    println!("Three decimal places: {1:.*}", 3, 3.14159);
-    println!("Three decimal places: {} = {2:.*}", "x", 3, 3.14159);
+    let pi = 3.141592;
+    println!("One decimal place: {0} = {1:.1}", "x", pi);
+    println!("Two decimal places: {0} = {1:.2}", "x", pi);
+    println!("Three decimal places: {1:.*}", 3, pi);
+    println!("Three decimal places: {0} {1:.3}", "x", pi);
+    println!("Three decimal places: {} = {2:.*}", "x", 3, pi);
 }
